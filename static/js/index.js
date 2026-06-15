@@ -139,10 +139,10 @@ $(document).ready(function() {
 		autoplay: false,
     });
 
-	// Tool-related zero-shot carousel: show 2 videos at once, advance one at a time
+	// Tool-related zero-shot carousel: show 1 video at a time, advance one at a time
     bulmaCarousel.attach('#results-carousel-toolrelated', {
 		slidesToScroll: 1,
-		slidesToShow: 2,
+		slidesToShow: 1,
 		loop: true,
 		infinite: true,
 		autoplay: false,

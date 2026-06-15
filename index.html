@@ -304,25 +304,13 @@
                     </a>
                   </span>
 
-                  <!-- TODO: Add your supplementary material PDF or remove this section -->
-                  <span class="link-block">
-                    <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+                    <a class="external-link button is-normal is-rounded is-dark" disabled>
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Code</span>
+                      <span>Code (Coming Soon)</span>
                     </a>
                   </span>
 
@@ -407,12 +395,13 @@
               <img src="static/images/pipeline_4.png" alt="Method overview figure" loading="lazy" />
               <!-- TODO: Replace with figure caption -->
               <h2 class="subtitle has-text-centered">
-                Our pipeline takes as input calibrated mulit-view RGB images and high levvel language instruction, and
+                <br><br>
+                Our pipeline takes as input calibrated mulit-view RGB images and high level language instruction, and
                 outputs a physicaly feasible arm-hand execution plan. Our pipeline consists of four main stages:
                 <b>(1)</b>
                 reference-view semantic grounding <b>(2)</b> multi-view fusion-based 3D uplifting <b>(3)</b> object
                 centric atomic
-                action alignment for tool-use <b>(4)</b> affordance guided dexterous grasp and motino generation
+                action alignment for tool-use <b>(4)</b> affordance guided dexterous grasp and motion generation.
               </h2>
             </div>
           </div>
@@ -462,7 +451,7 @@
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/pickandplacetosamecategory.mp4" type="video/mp4">
+                <source src="static/videos/executions/compressed/pickandplacetosamecategory_2.mp4" type="video/mp4">
               </video>
               <!-- TODO: Replace with the prompt for this video -->
               <p class="prompt">"Put the object outside the baskets into the matching basket."</p>
@@ -476,7 +465,8 @@
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/put_stove_2_25322639_6x-4609.mp4" type="video/mp4">
+                <source src="static/videos/executions/compressed/put_stove_2_25322639_6x-4609_trimmed.mp4"
+                  type="video/mp4">
               </video>
               <!-- TODO: Replace with the prompt for this video -->
               <p class="prompt">"Put the pot on the stove."</p>
@@ -501,28 +491,39 @@
         <div class="container">
           <hr class="result-divider">
           <h2 class="title is-3 has-text-centered">Zero-Shot Execution Result - Tool Related</h2>
+          <details class="toolrelated-feature-details">
+            <summary>Object Centric Atomic Action Alignment</summary>
+            <div class="toolrelated-feature">
+              <img src="static/images/broom_atomic_aligned.gif" alt="Tool-related atomic execution" width="100%">
+              <!-- TODO: Write the description for this figure -->
+              <p class="toolrelated-feature-caption">
+                Leveraging 3D grounded keypoints derived from VLM reasoning and multi-view 3D lifting, we align the 6D
+                tool trajectory to the scene, yielding a scene-aligned trajectory.
+              </p>
+            </div>
+          </details>
           <div id="results-carousel-toolrelated" class="carousel results-carousel">
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_same_color_25322639%203_6x.mp4" type="video/mp4">
+                <source src="static/videos/executions/broom_2_wmarker.mp4" type="video/mp4">
               </video>
               <p class="prompt">"Sweep the object on the cutting board to the area with same color of object"</p>
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_blue_25322639%20(3)_6x.mp4" type="video/mp4">
+                <source src="static/videos/executions/broom_1_wmarker.mp4" type="video/mp4">
               </video>
               <p class="prompt">"Sweep the trash on the cutting board to the blue area"</p>
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_yellow_25322639_6x.mp4" type="video/mp4">
+                <source src="static/videos/executions/broom_3_wmarker.mp4" type="video/mp4">
               </video>
               <p class="prompt">"Sweep the trash on the cutting board to the yellow area"</p>
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/pour_water.mp4" type="video/mp4">
+                <source src="static/videos/executions/pour_water_wmarker.mp4" type="video/mp4">
               </video>
               <p class="prompt">"Pour water from the kettle to the dripper."</p>
             </div>
@@ -543,7 +544,7 @@
             <div class="item item-video1">
               <video autoplay controls muted loop playsinline width="100%" preload="metadata">
                 <!-- TODO: Replace with your long-term manipulation video -->
-                <source src="static/videos/longterm_manip_replan_boldmp4.mp4" type="video/mp4">
+                <source src="static/videos/longterm_manip_replan_bold.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-video2">
