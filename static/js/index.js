@@ -139,6 +139,15 @@ $(document).ready(function() {
 		autoplay: false,
     });
 
+	// Tool-related zero-shot carousel: show 2 videos at once, advance one at a time
+    bulmaCarousel.attach('#results-carousel-toolrelated', {
+		slidesToScroll: 1,
+		slidesToShow: 2,
+		loop: true,
+		infinite: true,
+		autoplay: false,
+    });
+
 	// Long-term carousel: single slide, slide sideways
     bulmaCarousel.attach('#results-carousel-longterm', options);
 

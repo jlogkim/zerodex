@@ -91,13 +91,14 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning - Jisoo Kim, Sangwon
+  <title>Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning - Jisoo Kim,
+    Sangwon
     Baik, Taeksoo Kim, SungJoo Kim, Junyoung Lee, Mingi Choi and Hanbyul Joo |
     Academic Research</title>
 
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicon_96.png">
+  <link rel="apple-touch-icon" href="static/images/favicon_96.png">
 
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -190,9 +191,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
+    "name": "Visual Computing Lab,Seoul National University",
     "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon_32.png",
     "sameAs": [
       "https://twitter.com/YOUR_TWITTER_HANDLE",
       "https://github.com/YOUR_GITHUB_USERNAME"
@@ -263,9 +264,9 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <!-- TODO: Replace with your paper title -->
-              <h1 class="title is-2 publication-title">Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View
-                3D-Grounded VLM Reasoning</h1>
+              <!-- TODO: Replace with your paper title. Use <br> to control line breaks wherever you want. -->
+              <h1 class="title is-2 publication-title">Zero-Shot Long-Horizon Dexterous Manipulation <br>
+                via Multi-View 3D-Grounded VLM Reasoning</h1>
               <div class="is-size-5 publication-authors">
                 <!-- Authors with numeric affiliation superscripts (replace PERSONAL_LINK placeholders) -->
                 <span class="author-block"><a href="https://jlogkim.github.io/" target="_blank">Jisoo
@@ -420,35 +421,17 @@
     </section>
     <!-- End method overview -->
 
+    <!-- Spacer between Method Overview and Zero-Shot Execution Result -->
+    <div style="height: 3rem;"></div>
 
     <!-- Result video carousel -->
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
+          <hr class="result-start-divider">
           <h2 class="title is-3 has-text-centered">Zero-Shot Execution Result</h2>
           <!-- Carousel shows 3 videos at once (configured in index.js); advancing brings in the next, all playing -->
           <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_same_color_25322639%203_6x.mp4" type="video/mp4">
-              </video>
-              <!-- TODO: Replace with the prompt for this video -->
-              <p class="prompt">"Sweep the object on the cutting board to the area with same color of object"</p>
-            </div>
-            <div class="item">
-              <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_blue_25322639%20(3)_6x.mp4" type="video/mp4">
-              </video>
-              <!-- TODO: Replace with the prompt for this video -->
-              <p class="prompt">"Sweep the trash on the cutting board to the blue area"</p>
-            </div>
-            <div class="item">
-              <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/broom_yellow_25322639_6x.mp4" type="video/mp4">
-              </video>
-              <!-- TODO: Replace with the prompt for this video -->
-              <p class="prompt">"Sweep the trash on the cutting board to the yellow area"</p>
-            </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
                 <source src="static/videos/executions/compressed/throw_can_3.mp4" type="video/mp4">
@@ -486,13 +469,6 @@
             </div>
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
-                <source src="static/videos/executions/compressed/pour_water.mp4" type="video/mp4">
-              </video>
-              <!-- TODO: Replace with the prompt for this video -->
-              <p class="prompt">"Pour water from the kettle to the dripper."</p>
-            </div>
-            <div class="item">
-              <video controls muted loop playsinline width="100%" preload="metadata">
                 <source src="static/videos/executions/compressed/put_stove_1_trimmed.mp4" type="video/mp4">
               </video>
               <!-- TODO: Replace with the prompt for this video -->
@@ -519,10 +495,49 @@
     <!-- End result video carousel -->
 
 
-    <!-- Long-term manipulation result video carousel -->
-    <section class="hero is-small is-light">
+    <!-- Zero-shot execution result (tool related) video carousel -->
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
+          <hr class="result-divider">
+          <h2 class="title is-3 has-text-centered">Zero-Shot Execution Result - Tool Related</h2>
+          <div id="results-carousel-toolrelated" class="carousel results-carousel">
+            <div class="item">
+              <video controls muted loop playsinline width="100%" preload="metadata">
+                <source src="static/videos/executions/compressed/broom_same_color_25322639%203_6x.mp4" type="video/mp4">
+              </video>
+              <p class="prompt">"Sweep the object on the cutting board to the area with same color of object"</p>
+            </div>
+            <div class="item">
+              <video controls muted loop playsinline width="100%" preload="metadata">
+                <source src="static/videos/executions/compressed/broom_blue_25322639%20(3)_6x.mp4" type="video/mp4">
+              </video>
+              <p class="prompt">"Sweep the trash on the cutting board to the blue area"</p>
+            </div>
+            <div class="item">
+              <video controls muted loop playsinline width="100%" preload="metadata">
+                <source src="static/videos/executions/compressed/broom_yellow_25322639_6x.mp4" type="video/mp4">
+              </video>
+              <p class="prompt">"Sweep the trash on the cutting board to the yellow area"</p>
+            </div>
+            <div class="item">
+              <video controls muted loop playsinline width="100%" preload="metadata">
+                <source src="static/videos/executions/compressed/pour_water.mp4" type="video/mp4">
+              </video>
+              <p class="prompt">"Pour water from the kettle to the dripper."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End zero-shot execution result (tool related) video carousel -->
+
+
+    <!-- Long-term manipulation result video carousel -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <hr class="result-divider">
           <h2 class="title is-3 has-text-centered">Long-horizon Manipulation Result</h2>
           <div id="results-carousel-longterm" class="carousel results-carousel">
             <div class="item item-video1">
@@ -560,7 +575,8 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title is-3 has-text-centered">Tool Usage Case</h2>
+          <hr class="result-divider">
+          <h2 class="title is-3 has-text-centered">Tool-Use Cases</h2>
           <div id="results-carousel-tooluse" class="carousel results-carousel">
             <div class="item">
               <video controls muted loop playsinline width="100%" preload="metadata">
