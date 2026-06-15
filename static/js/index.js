@@ -127,12 +127,29 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		loop: true,
 		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplay: false,
     }
 
-	// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+	// Result carousel: show 2 videos at once, advance one at a time
+    bulmaCarousel.attach('#results-carousel', {
+		slidesToScroll: 1,
+		slidesToShow: 2,
+		loop: true,
+		infinite: true,
+		autoplay: false,
+    });
+
+	// Long-term carousel: single slide, slide sideways
+    bulmaCarousel.attach('#results-carousel-longterm', options);
+
+	// Tool usage carousel: show 2 videos at once, advance one at a time
+    bulmaCarousel.attach('#results-carousel-tooluse', {
+		slidesToScroll: 1,
+		slidesToShow: 2,
+		loop: true,
+		infinite: true,
+		autoplay: false,
+    });
 	
     bulmaSlider.attach();
     
