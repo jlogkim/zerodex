@@ -24,22 +24,27 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Seoul National University">
   <!-- TODO: Same as paper title above -->
   <meta property="og:title"
     content="Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning">
   <!-- TODO: Same as description above -->
   <meta property="og:description"
     content="A zero-shot framework that uses calibrated multi-view RGB and VLM-guided 3D keypoints to execute long-horizon dexterous manipulation and tool-use tasks.">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://jlogkim.github.io/zerodex3d/">
+  <meta property="og:image" content="https://jlogkim.github.io/zerodex3d/static/images/social_preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
   <meta property="og:image:alt"
     content="Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <!-- Animated teaser (plays inline on platforms that support og:video, e.g. Discord/Twitter) -->
+  <meta property="og:video" content="https://jlogkim.github.io/zerodex3d/static/videos/teaser_compressed.mp4">
+  <meta property="og:video:secure_url" content="https://jlogkim.github.io/zerodex3d/static/videos/teaser_compressed.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
   <meta property="article:author" content="Jisoo Kim">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="Zero-Shot Manipulation">
@@ -47,10 +52,10 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <!-- Twitter handles omitted for now; add when available:
   <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  -->
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title"
     content="Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning">
@@ -58,7 +63,7 @@
   <meta name="twitter:description"
     content="A zero-shot framework that uses calibrated multi-view RGB and VLM-guided 3D keypoints to execute long-horizon dexterous manipulation and tool-use tasks.">
   <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image" content="https://jlogkim.github.io/zerodex3d/static/images/social_preview.jpg">
   <meta name="twitter:image:alt"
     content="Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning - Research Preview">
 
@@ -72,9 +77,9 @@
   <meta name="citation_author" content="Lee, Junyoung">
   <meta name="citation_author" content="Choi, Mingi">
   <meta name="citation_author" content="Joo, Hanbyul">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Preprint">
+  <meta name="citation_pdf_url" content="https://jlogkim.github.io/zerodex3d/static/pdfs/zerodex3d.pdf">
 
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -145,7 +150,7 @@
         "name": "Jisoo Kim",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Seoul National University"
         }
       },
       {
@@ -153,34 +158,33 @@
         "name": "Sangwon Baik",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Seoul National University"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "Preprint"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "url": "https://jlogkim.github.io/zerodex3d/",
+    "image": "https://jlogkim.github.io/zerodex3d/static/images/social_preview.jpg",
     "keywords": ["Zero-Shot Manipulation", "Dexterous Grasping", "Multiview Grounding", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "abstract": "We present a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-frame task grounding and primitive-level 2D keypoints, then lifts them into 3D via multi-view fusion combining triangulation with reference-view ray voting. The resulting 3D keypoints support both pick-and-place and tool-use, and closed-loop verification and retry enable zero-shot execution on unseen objects and tool-use tasks in novel scenes.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://jlogkim.github.io/zerodex3d/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Zero-Shot Robotic Manipulation"
       },
       {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "@type": "Thing",
+        "name": "Dexterous Grasping"
       }
     ]
   }
@@ -191,13 +195,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Visual Computing Lab,Seoul National University",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon_32.png",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "name": "Seoul National University",
+    "url": "https://jhugestar.github.io/",
+    "logo": "https://jlogkim.github.io/zerodex3d/static/images/favicon_96.png"
   }
   </script>
 </head>
@@ -209,54 +209,6 @@
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
     <section class="hero">
@@ -295,7 +247,7 @@
                 <div class="publication-links">
                   <!-- TODO: Update with your arXiv paper ID -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    <a href="static/pdfs/zerodex3d.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -314,14 +266,13 @@
                     </a>
                   </span>
 
-                  <!-- TODO: Update with your arXiv paper ID -->
+                  <!-- TODO: Add arXiv link once the paper is on arXiv -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+                    <a class="external-link button is-normal is-rounded is-dark" disabled>
                       <span class="icon">
                         <i class="ai ai-arxiv"></i>
                       </span>
-                      <span>arXiv</span>
+                      <span>arXiv (Coming Soon)</span>
                     </a>
                   </span>
                 </div>
@@ -396,12 +347,12 @@
               <!-- TODO: Replace with figure caption -->
               <h2 class="subtitle has-text-centered">
                 <br><br>
-                Our pipeline takes as input calibrated mulit-view RGB images and high level language instruction, and
-                outputs a physicaly feasible arm-hand execution plan. Our pipeline consists of four main stages:
+                Our pipeline takes as input calibrated multi-view RGB images and a high-level language instruction, and
+                outputs a physically feasible arm-hand execution plan. Our pipeline consists of four main stages:
                 <b>(1)</b>
-                reference-view semantic grounding <b>(2)</b> multi-view fusion-based 3D uplifting <b>(3)</b> object
-                centric atomic
-                action alignment for tool-use <b>(4)</b> affordance guided dexterous grasp and motion generation.
+                reference-view semantic grounding <b>(2)</b> multi-view fusion-based 3D uplifting <b>(3)</b>
+                object-centric atomic
+                action alignment for tool-use <b>(4)</b> affordance-guided dexterous grasp and motion generation.
               </h2>
             </div>
           </div>
