@@ -329,7 +329,7 @@ body {
 /* Prompt caption under each result video */
 .results-carousel .item .prompt {
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-top: 0.85rem;
   font-weight: 500;
   font-style: italic;
@@ -351,17 +351,6 @@ body {
 #results-carousel-longterm.results-carousel .item:hover,
 #results-carousel-tooluse.results-carousel .item:hover {
   box-shadow: none;
-}
-
-/* Long-horizon carousel: crop top & bottom of the wide videos.
-   Wider aspect-ratio than the source + object-fit:cover trims vertically.
-   Tune the ratio (e.g. 16/7 = less crop, 21/4 = more) or object-position
-   (center / top / bottom) to choose which band stays visible. */
-#results-carousel-longterm.results-carousel video {
-  aspect-ratio: 12 / 6;
-  height: auto;
-  object-fit: cover;
-  object-position: center 75%;
 }
 
 /* Tool-related carousel: narrow the single slide and center it.
@@ -803,6 +792,14 @@ code {
   .results-carousel .item {
     margin: 0.5rem;
     padding: 1rem;
+  }
+
+  /* Carousel caption: slightly larger & darker so it's readable on mobile */
+  .results-carousel .item .prompt {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.45;
   }
 
   .teaser .hero-body {
