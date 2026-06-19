@@ -120,11 +120,23 @@ body {
 /* Publication Content Styling */
 .publication-title {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 800 !important;
-  font-size: 2.4rem !important;
+  font-weight: 500 !important;
+  font-size: 2.1rem !important;
   color: var(--text-primary) !important;
   margin-bottom: 2rem !important;
   line-height: 1.15 !important;
+}
+
+/* Project nickname in the title — larger and bolder than the rest */
+.publication-title .brand-name {
+  font-size: 1.25em;
+  font-weight: 800 !important;
+}
+
+/* TL;DR project name — gentle emphasis via brand color + semibold */
+.tldr-brand {
+  font-weight: 700;
+  color: var(--author-color);
 }
 
 .publication-banner {
@@ -370,9 +382,9 @@ body {
 .toolrelated-feature-details>summary {
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding: 0.4rem 0;
   list-style: none;
 }
@@ -412,11 +424,16 @@ body {
   border-radius: var(--border-radius);
 }
 
+/* tighten the gap between the two stacked clips */
+.toolrelated-feature video + video {
+  margin-top: 0.25rem;
+}
+
 .toolrelated-feature-caption {
   margin-top: 1rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   text-align: center;
 }
 
