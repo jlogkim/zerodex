@@ -133,6 +133,13 @@ body {
   font-weight: 800 !important;
 }
 
+/* Video placed under the Method Overview figure + description */
+.method-overview-video {
+  display: block;
+  margin: 1.5rem auto 0;
+  border-radius: var(--border-radius);
+}
+
 /* TL;DR project name — gentle emphasis via brand color + semibold */
 .tldr-brand {
   font-weight: 700;
